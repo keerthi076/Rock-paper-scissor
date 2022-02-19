@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>stonepaperscissors</title>
+</head>
+<body>
+	<script src="stonepaper.js"></script>
+	<div id="whole" style="display:block">
+<div class="left">You<p id="me">
+	<img id="image1" style="display:none" src="C:\Users\keert\Downloads\Group 4.png">
+
+	<img   id="image2" style="display:none" src="C:\Users\keert\Downloads\Group 2.png">
+
+	<img   id="image3" style="display:none" src="C:\Users\keert\Downloads\hand-scissors.png">
+</p>
+	
+<p>your score:<span id="your"></span></p></div>
+
+<div class="right">computer
+	<p id="computerbox">
+	<img id="image11" style="display:none" src="C:\Users\keert\Downloads\Group 4.png">
+
+	<img   id="image22" style="display:none" src="C:\Users\keert\Downloads\Group 2.png">
+
+	<img   id="image33" style="display:none" src="C:\Users\keert\Downloads\hand-scissors.png">	
+	</p>
+<p>computer score:<span id="computer"></span></p>
+</div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><div class="op">
+	<p><img onclick="stone()"  id="imageleft" src="C:\Users\keert\Downloads\Group 4.png">
+
+	<img onclick="paper()"  id="imagepaper" src="C:\Users\keert\Downloads\Group 2.png">
+
+<img onclick="scissors()"  id="imagescissor" src="C:\Users\keert\Downloads\hand-scissors.png"></p>
+
+<p id="ties1">Ties:<span id="ties"></span>
+<span id="tries1">Tries:<span id="tries"></span></span></p>
+</div></div>
+<div id="new1" style="display:none">
+	<br><br><br><br><br>
+	<p id="result"></p>
+	<button id="button" onclick="display()">Restart</button>
+	<script>
+	function display(){
+		var display=document.getElementById("whole");
+		if(whole.style.display=="none"){
+			whole.style.display="block";
+			new1.style.display="none"
+		}
+	var image1=document.getElementById("image1");
+var image2=document.getElementById("image2");
+var image3=document.getElementById("image3");
+var image11=document.getElementById("image11");
+var image22=document.getElementById("image22");
+var image33=document.getElementById("image33");
+image1.style.display="none";
+image2.style.display="none";
+image3.style.display="none";
+image11.style.display="none";
+image22.style.display="none";
+image33.style.display="none";
+
+}
+
+</script>
+	
+	<style>
+		#button{
+			padding:15px;
+			color:#7B7D87;
+			background-color:#ff9933;
+			font-size:22px;
+			border-radius:12px;
+			border:none;
+			font-weight:bold;
+
+		}
+		#result{
+			color:#656FAF;
+			font-weight:bold;
+			font-size:40px;
+		}
+		#ties1{
+			margin-left:40px;
+		}
+
+		#new1{
+			
+            text-align:center;
+            color:#ff9933;
+		}
+#tries1{
+	margin-left:180px;
+}
+#image1,#image3,#image2{
+	
+			width:70px;
+			height:70px;
+			margin-right:0px;
+			border:;
+		padding:px;
+
+}#image11,#image33,#image22{
+	
+			width:70px;
+			height:70px;
+			margin-right:0px;
+			border:;
+		padding:px;
+
+}
+
+
+
+		#me{
+			border-radius:50%;
+			background-color:#ff9933;
+			border-width:0.1px;
+			width:70px;
+			height:70px;
+			margin-left:75px;
+			border:;
+		padding:40px;
+		}
+		body{
+			color:#7B7D87;
+			font-size:22px;
+		}
+		#computerbox{
+			border-radius:50%;
+			background-color:#656FAF;
+			border-width:0.1px;
+			width:70px;
+			height:70px;
+			margin-left:60px;
+			border:;
+		padding:50px;
+		}
+		.op{
+			margin-left:470px;
+		}
+
+		.left{
+			text-align:center;
+			font-family:;
+			font-size:22px;
+			padding:10px;
+			float:left;
+			width:300px;
+			height:300px;
+			border-style:;
+			border-width:0.1px;
+			margin-left:250px;
+			margin-top:90px;
+			border-radius:4px;
+			
+			box-shadow:0px 3px 11px rgb(0 0 0/0.2);
+		}
+		#imagepaper{
+
+			width:50px;
+			height:50px;
+			border-radius:50%;
+			background-color:;
+			background-color:#656FAF;
+			margin-left:30px;
+			padding:20px;
+		}
+		#imageleft{
+			width:50px;
+			height:50px;
+			border-radius:50%;
+			background-color:#656FAF;
+			padding:20px;
+			margin-left:30px;
+		}
+		#imageleft:hover{
+			background-color:#7B7D87;
+		}
+		#imagepaper:hover{
+			background-color:#7B7D87;
+		}
+		#imagescissor:hover{
+			background-color:#7B7D87;
+		}
+
+		#imagescissor{
+			width:50px;
+			height:50px;
+			border-radius:50%;
+			background-color:#656FAF;
+			margin-left:30px;
+			padding:20px;
+		}
+		.right{
+			text-align:center;
+			font-family:;
+			font-size:22px;
+			padding:10px;
+			border-radius:4px;
+			box-shadow:0px 3px 11px rgb(0 0 0/0.2);
+			float:right;
+			width:300px;
+			height:300px;
+			border-style:;
+			border-width:0.1px;
+			margin-right:250px;
+			margin-top:90px;
+			
+		}
+
+</body>
+
+
+	
+
